@@ -1,10 +1,8 @@
-import data from "../data/data.json"
 
-export default function Title() {
-    const title = data.title;
+export default function Title(props) {
     return (
       <div>
-        <p>{title}</p>
+        <p>{props.title}</p>
       </div>
     );
   }

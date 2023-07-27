@@ -1,7 +1,6 @@
-import data from "../data/data.json"
 import Image from 'next/image';
 
-const Logo = () =>  (
+const Logo = (props) =>  (
     <Image
       src="/penguin.jpeg"
       alt="logo"
@@ -10,8 +9,7 @@ const Logo = () =>  (
    />
   )
 
-export default function NewsImage() {
-    const src = data.src;
+export default function NewsImage(props) {
     return (
         <div>
             <Logo/>

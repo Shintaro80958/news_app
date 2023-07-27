@@ -1,10 +1,9 @@
-import data from "../data/data.json"
 
-export default function Description() {
-    const  description = data.description;
+
+export default function Description(props) {
     return (
       <div>
-        <p>{description}</p>
+        <p>{props.description}</p>
       </div>
     );
   }
