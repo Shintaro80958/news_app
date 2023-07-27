@@ -1,13 +1,12 @@
 import News from "./News"
 import data from "../data/data.json"
-import Image from 'next/image';
-
-
 
 export default function Contents() {
     return (
       <div>
-          <News data={data}/>
+        {data.map((item, index)=>{
+            return <News data={item} key={index}/>
+        })}
       </div>
     )
   }
