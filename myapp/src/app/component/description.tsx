@@ -1,9 +1,7 @@
-
-
 export default function Description(props) {
-    return (
-      <div>
-        <p>{props.description}</p>
-      </div>
-    );
-  }
+  return (
+    <div className="py-2">
+      <p>{props.description}</p>
+    </div>
+  );
+}

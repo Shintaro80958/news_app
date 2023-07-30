@@ -1,8 +1,7 @@
-
 export default function Title(props) {
-    return (
-      <div>
-        <p>{props.title}</p>
-      </div>
-    );
-  }
+  return (
+    <div>
+      <h1 className="text-3xl">{props.title}</h1>
+    </div>
+  );
+}

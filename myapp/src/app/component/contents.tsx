@@ -5,7 +5,7 @@ export default function Contents() {
     return (
       <div>
         {data.map((item, index)=>{
-            return <News data={item} key={index}/>
+            return <News data={item} key={index} />
         })}
       </div>
     )

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Header from "./component/headear";
+import Header from "./component/header";
 import Contents from "./component/contents";
 
 export default function Home() {
