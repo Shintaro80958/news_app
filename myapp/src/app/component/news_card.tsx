@@ -4,10 +4,11 @@ import Description from "./description";
 import Link from "next/link";
 
 export default function NewsCard(props) {
-  const src = props.data.src;
+  const src = props.data.urlToImage;
   const title = props.data.title;
   const description = props.data.description;
   const index = props.index;
+  const mystate = props.mystate
   return (
     <Link
       href={{

@@ -1,19 +1,16 @@
 import Image from "next/image";
 
-const Logo = (props) => (
-  <Image
-    src="/penguin.jpeg"
-    alt="logo"
-    width={300}
-    height={300}
-    className="mx-auto"
-  />
-);
-
 export default function NewsImage(props) {
+  const src = props.src;
   return (
     <div>
-      <Logo />
+      <img
+        src={src}
+        alt="news image"
+        width={500}
+        height={400}
+        className="mx-auto rounded"
+      />
     </div>
   );
 }
