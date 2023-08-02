@@ -8,7 +8,7 @@ const params = {
 
 // HTTP headers
 const headers = {
-  "X-Api-Key": "3e69b79661df43f3a3a2118466b9150f",
+  "X-Api-Key": process.env.NEXT_PUBLIC_NEWS_API_KEY,
 };
 
 // Axios request configuration
