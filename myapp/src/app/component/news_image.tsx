@@ -1,7 +1,11 @@
 import Image from "next/image";
 
-export default function NewsImage(props) {
-  const src = props.src;
+interface Props {
+  src: String;
+}
+
+export default function NewsImage(props: Props) {
+  const src: String = props.src;
   return (
     <div>
       <img

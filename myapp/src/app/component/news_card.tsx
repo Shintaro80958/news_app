@@ -3,12 +3,24 @@ import Title from "./title";
 import Description from "./description";
 import Link from "next/link";
 
-export default function NewsCard(props) {
-  const src = props.data.urlToImage;
-  const title = props.data.title;
-  const description = props.data.description;
-  const index = props.index;
-  const mystate = props.mystate
+interface Data {
+  urlToImage: String;
+  title: String;
+  description: String;
+  content: String;
+}
+
+interface Props {
+  data: Data;
+  index: number;
+}
+
+export default function NewsCard(props: Props) {
+  const src: String = props.data.urlToImage;
+  const title: String = props.data.title;
+  const description: String = props.data.description;
+  const index: number = props.index;
+
   return (
     <Link
       href={{

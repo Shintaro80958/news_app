@@ -4,9 +4,13 @@
 import { useRouter } from "next/navigation";
 import { BackButton } from "./back_button";
 
-export default function Header(props) {
+interface Props {
+  isNewsPage: boolean;
+}
+
+export default function Header(props: Props) {
   const router = useRouter();
-  const handleClick = () => {
+  const handleClick = (): void => {
     router.back();
   };
 
