@@ -1,3 +1,4 @@
+// prettier-ignore
 'use client'
 
 import { useRouter } from "next/navigation";

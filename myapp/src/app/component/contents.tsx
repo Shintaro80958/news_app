@@ -1,3 +1,4 @@
+// prettier-ignore
 'use client'
 
 import NewsCard from "./news_card";
@@ -17,7 +18,9 @@ export default function Contents() {
   return (
     <div>
       {news_data.map((item, index) => {
-        return <NewsCard data={item} key={index} index={index} mystate={news_data} />;
+        return (
+          <NewsCard data={item} key={index} index={index} mystate={news_data} />
+        );
       })}
     </div>
   );
