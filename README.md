@@ -1,2 +1,3 @@
 # next_practice
-練習
+ニュースAPIを使用したWebアプリ
+Next.jsの練習のため
